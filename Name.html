@@ -1,0 +1,71 @@
+
+<DOCTYPE! HTML>
+    <html>
+        <head>
+            <title>Name</title>
+        </head>
+        <body>
+            <!-- //Create a simple HTML form with a single field called "Name" and make it required.
+//Test in multiple browsers what happens when you click "Submit" without filling out the required field.
+//Every browser is a little different. -->
+            <!-- <div>
+                <form>
+                    <input type="text" name="name" required>
+                    <button type="submit" class= "submitButton">Submit</button>
+                </form>
+            </div> -->
+<!-- Create a simple HTML form with a single field called "Age". Restrict the user to only numbers that are from 0-100 -->
+            <!-- <div>
+                <form>
+                    <input type="number" label="age" min="0" max="100">
+                    <button type="submit" class= "submitButton">Submit</button>
+                </form>
+            </div> -->
+<!-- Create a simple HTML form with a single field called "Username". This field should a custom error if the name is longer 
+than 15 characters. -->
+<!-- <div class="container">
+    <form>
+        <input type="text" name="username" id=name>
+        <button type="submit">Submit</button>
+    </form>
+</div> -->
+<!-- //field : name & validation: required, min length = 5 -->
+<div class="container">
+    <form>
+        <input type="text" name="name" id=name min="5" required>
+        <button type="submit">Submit Name</button>
+    </form>
+</div> 
+<!-- //field: password & Validation: required, min length=6 & max length=15 -->
+<div class="container">
+    <form>
+        <input type="password" id=password min="6" max="15" required>
+        <button type="submit">Enter Password</button>
+    </form>
+</div> 
+<!-- //field: email & Validations: required, email format -->
+<div class="container">
+    <form>
+        <input type="email" id=email required>
+        <button type="submit">Enter Email</button>
+    </form>
+</div> 
+<!-- //field: about me & Validations: textarea, max length: 250 -->
+<div class="container">
+    <form>
+        <input type="textarea" id=TextBox max="250" required>
+        <button type="submit">Submit About Me</button>
+    </form>
+</div> 
+<!-- //field: robot check & Validations: required, should match a pattern of text -->
+<div class="container">
+    <form>
+        <label> Type: "I am a human"
+        <input id="robot-check" type="text" pattern="I am a human">
+        <button type="submit">Not a Robot</button>
+    </form>
+</div> 
+<!-- <script src="scripts.js"></script> -->
+        </body>
+    </html>
+</DOCTYPE>
